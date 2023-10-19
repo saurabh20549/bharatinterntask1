@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    text-align: center;
+    background-color: #2b373d;
+}
+
+header {
+    background-color: #445760;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 2.2rem;
+    font-family: ubuntu;
+    border-radius: 0.5rem;
+    margin: 5px;
+}
+
+h1 {
+    padding: 15px;
+    font-family: ubuntu;
+    font-size: 3.2rem;
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section {
+    border-radius: 10px;
+    padding: 20px;
+    width: 30%;
+    background-color: #445760;
+    margin: 0 10px;
+    text-align: left;
+}
+
+
+input[type="text"],
+input[type="file"] {
+    margin: 10px 0px 10px 0px;
+    font-size: 16px;
+    padding: 8px 8px;
+    margin-bottom: 10px;
+    width: 95%;
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+
+
+button {
+    margin: 10px 0px 10px 0px;
+    font-size: 16px;
+    padding: 8px 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+button.displayText {
+    background-color: #2196F3;
+    color: #fff;
+}
+
+button.displayImage {
+    background-color: #FF5733;
+    color: #fff;
+}
+
+button.displayVideo {
+    background-color: rgb(44 187 93);
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#output,
+#imageContainer,
+#videoContainer {
+    margin-top: 20px;
+    color: white;
+}
+
+img,
+video {
+    max-width: 100%;
+    max-height: 300px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1020px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+    }
+    .container div{
+        width: 95%;
+        margin: 5px;
+        padding: 15px;
+    }
+}
